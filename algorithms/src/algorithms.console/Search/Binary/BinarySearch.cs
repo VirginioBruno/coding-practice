@@ -1,4 +1,4 @@
-﻿namespace algorithms.console.Search.Binary
+namespace algorithms.console.Search.Binary
 {
     public class BinarySearch
     {

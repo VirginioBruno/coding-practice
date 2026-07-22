@@ -8,9 +8,9 @@ public class DynamicArray<T> : IEnumerable<T>
     private T[] _items;
     private int _count;
 
-    public int Count => 
+    public int Count =>
         _count;
-        
+
     public DynamicArray()
     {
         _items = new T[initialCapacity];
@@ -26,9 +26,9 @@ public class DynamicArray<T> : IEnumerable<T>
         _count = 0;
     }
 
-    public void Add(T item) 
+    public void Add(T item)
     {
-        if (_items.Length == _count) 
+        if (_items.Length == _count)
             Resize();
 
         var index = _count;
@@ -37,7 +37,7 @@ public class DynamicArray<T> : IEnumerable<T>
         _count++;
     }
 
-    public void Remove(T item) 
+    public void Remove(T item)
     {
         var index = 0;
 
@@ -52,7 +52,7 @@ public class DynamicArray<T> : IEnumerable<T>
         if (index == _count)
             return;
 
-        for (int i = index; i < _count - 1; i++) 
+        for (int i = index; i < _count - 1; i++)
         {
             _items[i] = _items[i + 1];
         }

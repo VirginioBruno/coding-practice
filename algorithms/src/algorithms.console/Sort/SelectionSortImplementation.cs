@@ -10,11 +10,11 @@ public class SelectionSortImplementation(int[] items) : AlgorithmImplementationB
 
             for (int j = i; j < Items.Length; j++)
             {
-                if (Items[j] < Items[minimumValueIndex]) 
+                if (Items[j] < Items[minimumValueIndex])
                     minimumValueIndex = j;
             }
 
-            if (minimumValueIndex != i) 
+            if (minimumValueIndex != i)
                 (Items[minimumValueIndex], Items[i]) = (Items[i], Items[minimumValueIndex]);
         }
 

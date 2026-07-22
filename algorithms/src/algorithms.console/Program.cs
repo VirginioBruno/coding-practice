@@ -1,4 +1,4 @@
-﻿using algorithms.console;
+using algorithms.console;
 using algorithms.console.Insertion;
 using algorithms.console.Search.Binary;
 using algorithms.console.Search.Linear;
@@ -6,7 +6,7 @@ using algorithms.console.Sort;
 
 var isPlayground = true;
 
-if (isPlayground) 
+if (isPlayground)
 {
     Playground.Do();
     return;

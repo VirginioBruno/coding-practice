@@ -7,7 +7,7 @@ public class InsertionAtEndImplementation(int[] items, int item) : AlgorithmImpl
         var result = new int[Items.Length + 1];
         var index = 0;
 
-        while(index < Items.Length) 
+        while (index < Items.Length)
         {
             result[index] = Items[index];
             index++;

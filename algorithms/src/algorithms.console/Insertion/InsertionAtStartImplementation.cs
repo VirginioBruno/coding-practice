@@ -10,7 +10,7 @@ public class InsertionAtStartImplementation(int[] items, int item) : AlgorithmIm
         result[index] = Item;
         index++;
 
-        for(int i = 0; i < Items.Length; i++) 
+        for (int i = 0; i < Items.Length; i++)
         {
             result[index] = Items[i];
             index++;

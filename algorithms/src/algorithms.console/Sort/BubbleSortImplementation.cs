@@ -10,7 +10,7 @@ public class BubbleSortImplementation(int[] items) : AlgorithmImplementationBase
 
             for (int j = 0; j < Items.Length - i - 1; j++)
             {
-                if (Items[j] > Items[j + 1]) 
+                if (Items[j] > Items[j + 1])
                 {
                     (Items[j + 1], Items[j]) = (Items[j], Items[j + 1]);
                     hasSwap = true;

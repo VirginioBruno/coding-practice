@@ -1,4 +1,4 @@
-﻿namespace algorithms.console.Search.Linear
+namespace algorithms.console.Search.Linear
 {
     public class LinearSearchImplementation : AlgorithmImplementationBase
     {

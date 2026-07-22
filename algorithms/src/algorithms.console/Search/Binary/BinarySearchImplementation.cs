@@ -1,4 +1,4 @@
-﻿namespace algorithms.console.Search.Binary
+namespace algorithms.console.Search.Binary
 {
     public class BinarySearchImplementation(int[] items, int item) : AlgorithmImplementationBase(items, item)
     {
@@ -14,9 +14,9 @@
                 if (Items[mid] == Item)
                     return mid;
 
-                if (Items[mid] > Item) 
+                if (Items[mid] > Item)
                     r = mid - 1;
-                else 
+                else
                     l = mid + 1;
             }
 

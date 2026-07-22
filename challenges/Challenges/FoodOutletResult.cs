@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace Challenges
 {
     [DataContract]
-    class UserRating
+    sealed class UserRating
     {
         [DataMember(Name = "average_rating")]
         public double AverageRating { get; set; }
@@ -14,7 +14,7 @@ namespace Challenges
     }
 
     [DataContract]
-    class Datum
+    sealed class Datum
     {
         [DataMember(Name = "city")]
         public string City { get; set; } = string.Empty;
@@ -33,7 +33,7 @@ namespace Challenges
     }
 
     [DataContract]
-    class FoodOutletResult
+    sealed class FoodOutletResult
     {
         [DataMember(Name = "page")]
         public int Page { get; set; }

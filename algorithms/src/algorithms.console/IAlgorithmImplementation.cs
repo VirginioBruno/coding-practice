@@ -1,4 +1,4 @@
-﻿namespace algorithms.console
+namespace algorithms.console
 {
     public interface IAlgorithmImplementation
     {

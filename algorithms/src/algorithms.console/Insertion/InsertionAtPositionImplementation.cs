@@ -10,7 +10,7 @@ public class InsertionAtPositionImplementation(int[] items, int item, int index)
         var result = new int[Items.Length + 1];
         var index = 0;
 
-        if (Index == 0) 
+        if (Index == 0)
         {
             var insertionAtStart = new InsertionAtStartImplementation(Items, Item);
             insertionAtStart.Execute();
@@ -24,11 +24,11 @@ public class InsertionAtPositionImplementation(int[] items, int item, int index)
             insertionAtEnd.Execute();
             Items = insertionAtEnd.Items;
             return 1;
-        }   
+        }
 
         for (int i = 0; i < Items.Length; i++)
         {
-            if (index == Index) 
+            if (index == Index)
             {
                 result[index] = Item;
                 index++;

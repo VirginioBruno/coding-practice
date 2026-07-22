@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -43,8 +43,8 @@ namespace Challenges
         {
             // Implementar uma classe para fazer todos os tratamentos necessários
             var formatedText = text
-                .Replace(" ", "")
-                .ToLower();
+                .Replace(" ", "", StringComparison.Ordinal)
+                .ToLowerInvariant();
 
             var characters = formatedText.ToCharArray();
             var textSize = formatedText.Length - 1;

@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 
 namespace Challenges
 {
@@ -12,7 +12,7 @@ namespace Challenges
             {
                 for (int j = i + 1; j < n; j++)
                 {
-                    if((a[i] + a[j]).CompareTo(a[j] + a[i]) > 0)
+                    if (string.Compare(a[i] + a[j], a[j] + a[i], StringComparison.Ordinal) > 0)
                     {
                         var temp = a[i];
                         a[i] = a[j];
@@ -28,7 +28,7 @@ namespace Challenges
         {
             var result = s;
 
-            while(ExistsDuplicatedChar(result))
+            while (ExistsDuplicatedChar(result))
             {
                 var array = result.ToCharArray();
 
@@ -37,8 +37,8 @@ namespace Challenges
                     var letter = array[i].ToString();
                     var nextLetter = array[i + 1].ToString();
 
-                    if (nextLetter == letter && result.Contains(letter + nextLetter))
-                        result = result.Remove(result.IndexOf(letter + nextLetter), 2);
+                    if (nextLetter == letter && result.Contains(letter + nextLetter, StringComparison.Ordinal))
+                        result = result.Remove(result.IndexOf(letter + nextLetter, StringComparison.Ordinal), 2);
                 }
             }
 
@@ -53,7 +53,7 @@ namespace Challenges
             {
                 var letter = array[i].ToString();
 
-                if (text.Contains(letter + letter))
+                if (text.Contains(letter + letter, StringComparison.Ordinal))
                     return true;
             }
 

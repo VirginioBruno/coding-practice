@@ -1,16 +1,19 @@
 # Coding Practice
 
-Estudos e exercícios de algoritmos, estruturas de dados e desafios de programação em C# e .NET 10.
+Laboratório de algoritmos, estruturas de dados e desafios de programação em C# e .NET 10. O objetivo é registrar implementações compreendidas, testadas e documentadas — não apenas acumular soluções.
 
-## Projetos
+## Conteúdo atual
 
-| Pasta | Conteúdo | Framework |
+| Área | Implementações | Situação |
 | --- | --- | --- |
-| [`algorithms`](./algorithms) | Algoritmos de inserção, busca e ordenação | .NET 10 |
-| [`data-structures`](./data-structures) | Coleções, grafos e árvores | .NET 10 |
-| [`challenges`](./challenges) | Desafios de programação e testes | .NET 10 |
+| Inserção em arrays | início, posição e fim | concluído e testado |
+| Busca | linear, binária iterativa e recursiva | concluído e testado |
+| Ordenação | bubble, selection e insertion sort | concluído e testado |
+| Estruturas de dados | array dinâmico | concluído e testado |
+| Challenges | números primos, palíndromo, ordenação e strings | concluído e testado |
+| Estruturas lineares, árvores e grafos | consulte o [`ROADMAP.md`](./ROADMAP.md) | planejado |
 
-A solução [`coding-practice.sln`](./coding-practice.sln) permite abrir e compilar todo o conteúdo de uma vez.
+Os projetos são reunidos pela solução [`coding-practice.sln`](./coding-practice.sln). Os testes ficam centralizados em [`tests/CodingPractice.Tests`](./tests/CodingPractice.Tests).
 
 ## Requisitos
 
@@ -19,13 +22,27 @@ A solução [`coding-practice.sln`](./coding-practice.sln) permite abrir e compi
 ## Comandos úteis
 
 ```bash
-dotnet build coding-practice.sln
-dotnet test coding-practice.sln
+dotnet restore coding-practice.sln
+dotnet format coding-practice.sln --verify-no-changes --no-restore
+dotnet build coding-practice.sln --configuration Release --no-restore
+dotnet test coding-practice.sln --configuration Release --no-build --no-restore
 ```
 
-## Qualidade
+Para criar um benchmark durante o estudo de um tópico:
 
-O workflow de integração contínua executa restore, build e testes a cada push ou pull request para a branch `main`.
+```bash
+dotnet run --project benchmarks/CodingPractice.Benchmarks -c Release
+```
+
+## Método de estudo
+
+- Use o [`guia de estudo`](./docs/STUDY_GUIDE.md) como fluxo de revisão.
+- Copie o [`template de estudo`](./docs/STUDY_TEMPLATE.md) para documentar cada tópico.
+- Atualize o [`roadmap`](./ROADMAP.md) somente quando a definição de pronto for atendida.
+
+## Qualidade automatizada
+
+O CI verifica formatação, padrões comuns de segredos, build sem warnings, 23 testes automatizados e cobertura mínima inicial de 40%. O Dependabot acompanha atualizações de pacotes NuGet e das GitHub Actions.
 
 ## Licença
 

@@ -6,7 +6,7 @@ public class InsertionSortImplementation(int[] items) : AlgorithmImplementationB
     public override int Execute()
     {
         // Start from the second position (first is considered ordered)
-        for (int i = 1; i < Items.Length; i++) 
+        for (int i = 1; i < Items.Length; i++)
         {
             var current = Items[i];
             var j = i - 1;

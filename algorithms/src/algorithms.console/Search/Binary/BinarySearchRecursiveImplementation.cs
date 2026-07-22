@@ -1,4 +1,4 @@
-﻿namespace algorithms.console.Search.Binary
+namespace algorithms.console.Search.Binary
 {
     public class BinarySearchRecursiveImplementation(int[] items, int item) : AlgorithmImplementationBase(items, item)
     {
@@ -9,7 +9,7 @@
             return RecursiveExecute(Items, l, r, Item);
         }
 
-        private int RecursiveExecute(int[] items, int l, int r, int x) 
+        private static int RecursiveExecute(int[] items, int l, int r, int x)
         {
             //verify index before start algorithm
             if (r >= l)
@@ -17,7 +17,7 @@
                 // calculate midpoint of array by adding half of the difference between left and right to left
                 // getting the difference (r - l) is needed to not cause an int overflow whether right is near to the maximum int possible
                 int mid = l + (r - l) / 2;
-                
+
                 // if midpoint contains the element just return it
                 if (items[mid] == x)
                     return mid;
@@ -32,6 +32,6 @@
 
             // the element is not in the array
             return -1;
-        }        
+        }
     }
 }

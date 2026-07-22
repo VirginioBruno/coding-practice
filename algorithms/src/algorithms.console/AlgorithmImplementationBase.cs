@@ -1,4 +1,4 @@
-﻿namespace algorithms.console
+namespace algorithms.console
 {
     public abstract class AlgorithmImplementationBase(int[] items, int item = 0, int index = 0) : IAlgorithmImplementation
     {
