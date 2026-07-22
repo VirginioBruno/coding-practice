@@ -1,0 +1,29 @@
+# .NET build output
+**/[Bb]in/
+**/[Oo]bj/
+artifacts/
+
+# IDE and user-specific files
+**/.vs/
+.idea/
+*.suo
+*.user
+*.rsuser
+*.sln.iml
+
+# Test and coverage output
+TestResults/
+coverage*.json
+coverage*.xml
+coverage*.info
+*.coverage
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
