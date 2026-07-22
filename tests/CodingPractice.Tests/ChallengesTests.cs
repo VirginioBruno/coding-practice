@@ -20,7 +20,7 @@ public class ChallengesTests
     [Theory]
     [InlineData("arara", true)]
     [InlineData("A base do teto desaba", true)]
-    [InlineData("algoritmo", false)]
+    [InlineData("algorithm", false)]
     public void Palindrome_IgnoresSpacesAndCasing(string text, bool expected)
     {
         Assert.Equal(expected, Program.Palindrome(text));
@@ -42,10 +42,10 @@ public class ChallengesTests
     }
 
     [Fact]
-    public void ToLexicograficOrder_ProducesSmallestConcatenation()
+    public void ToLexicographicOrder_ProducesSmallestConcatenation()
     {
         string[] values = ["3", "30", "34", "5", "9"];
 
-        Assert.Equal("3033459", values.ToLexicograficOrder());
+        Assert.Equal("3033459", values.ToLexicographicOrder());
     }
 }

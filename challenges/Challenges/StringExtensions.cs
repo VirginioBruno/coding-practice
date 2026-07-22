@@ -4,24 +4,24 @@ namespace Challenges
 {
     public static class StringExtensions
     {
-        public static string ToLexicograficOrder(this string[] a)
+        public static string ToLexicographicOrder(this string[] values)
         {
-            var n = a.Length;
+            var n = values.Length;
 
             for (int i = 0; i < n; i++)
             {
                 for (int j = i + 1; j < n; j++)
                 {
-                    if (string.Compare(a[i] + a[j], a[j] + a[i], StringComparison.Ordinal) > 0)
+                    if (string.Compare(values[i] + values[j], values[j] + values[i], StringComparison.Ordinal) > 0)
                     {
-                        var temp = a[i];
-                        a[i] = a[j];
-                        a[j] = temp;
+                        var temp = values[i];
+                        values[i] = values[j];
+                        values[j] = temp;
                     }
                 }
             }
 
-            return string.Concat(a);
+            return string.Concat(values);
         }
 
         public static string SuperReduce(this string s)

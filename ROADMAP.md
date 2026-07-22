@@ -1,26 +1,26 @@
 # Roadmap
 
-Este roadmap registra o progresso do estudo. Um item só deve ser marcado como concluído quando tiver implementação, testes, documentação de complexidade e exemplos de uso.
+This roadmap tracks study progress. A topic should only be marked as complete when it includes an implementation, tests, complexity analysis, and usage examples.
 
-## Concluído
+## Completed
 
-- [x] Array dinâmico
-- [x] Busca linear
-- [x] Busca binária iterativa
-- [x] Busca binária recursiva
+- [x] Dynamic array
+- [x] Linear search
+- [x] Iterative binary search
+- [x] Recursive binary search
 - [x] Bubble sort
 - [x] Selection sort
 - [x] Insertion sort
-- [x] Inserção no início, em uma posição e no fim de um array
-- [x] Primeiros challenges com testes automatizados
+- [x] Insertion at the start, at an arbitrary position, and at the end of an array
+- [x] Initial coding challenges with automated tests
 
-## Próximos estudos
+## Next topics
 
 - [ ] Stack
 - [ ] Queue
 - [ ] Singly linked list
 - [ ] Doubly linked list
-- [ ] Hash table e tratamento de colisões
+- [ ] Hash table and collision handling
 - [ ] Heap
 - [ ] Binary search tree
 - [ ] AVL tree
@@ -30,22 +30,22 @@ Este roadmap registra o progresso do estudo. Um item só deve ser marcado como c
 - [ ] Depth-first search
 - [ ] Dijkstra
 
-## Evolução do portfólio
+## Portfolio evolution
 
-- [ ] Documentar as implementações concluídas usando o template de estudo
-- [ ] Adicionar benchmarks representativos
-- [ ] Aumentar gradualmente a cobertura de testes
-- [ ] Selecionar challenges que demonstrem técnicas diferentes
-- [ ] Separar as implementações reutilizáveis das aplicações de demonstração
+- [ ] Document completed implementations with the study template
+- [ ] Add representative benchmarks
+- [ ] Gradually increase test coverage
+- [ ] Select challenges that demonstrate different techniques
+- [ ] Separate reusable implementations from demonstration applications
 
-## Definição de pronto
+## Definition of done
 
-Cada tópico deve atender a todos estes critérios:
+Each topic must meet all of these criteria:
 
-- [ ] contrato e comportamento definidos;
-- [ ] implementação escrita e compreendida;
-- [ ] casos felizes e casos-limite testados;
-- [ ] complexidade de tempo e espaço documentada;
-- [ ] limitações e trade-offs registrados;
-- [ ] exemplo de uso disponível;
-- [ ] build, testes e análise estática aprovados no CI.
+- [ ] contract and behavior are defined;
+- [ ] implementation is written and understood;
+- [ ] happy paths and edge cases are tested;
+- [ ] time and space complexity are documented;
+- [ ] limitations and trade-offs are recorded;
+- [ ] a usage example is available;
+- [ ] build, tests, and static analysis pass in CI.

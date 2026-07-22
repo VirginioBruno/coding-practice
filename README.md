@@ -1,25 +1,25 @@
 # Coding Practice
 
-Laboratório de algoritmos, estruturas de dados e desafios de programação em C# e .NET 10. O objetivo é registrar implementações compreendidas, testadas e documentadas — não apenas acumular soluções.
+Algorithms, data structures, and coding challenges in C# and .NET 10. The goal is to document implementations that are understood, tested, and explained—not merely to accumulate solutions.
 
-## Conteúdo atual
+## Current content
 
-| Área | Implementações | Situação |
+| Area | Implementations | Status |
 | --- | --- | --- |
-| Inserção em arrays | início, posição e fim | concluído e testado |
-| Busca | linear, binária iterativa e recursiva | concluído e testado |
-| Ordenação | bubble, selection e insertion sort | concluído e testado |
-| Estruturas de dados | array dinâmico | concluído e testado |
-| Challenges | números primos, palíndromo, ordenação e strings | concluído e testado |
-| Estruturas lineares, árvores e grafos | consulte o [`ROADMAP.md`](./ROADMAP.md) | planejado |
+| Array insertion | start, arbitrary position, and end | completed and tested |
+| Search | linear, iterative binary, and recursive binary search | completed and tested |
+| Sorting | bubble, selection, and insertion sort | completed and tested |
+| Data structures | dynamic array | completed and tested |
+| Challenges | prime numbers, palindromes, sorting, and strings | completed and tested |
+| Linear structures, trees, and graphs | see [`ROADMAP.md`](./ROADMAP.md) | planned |
 
-Os projetos são reunidos pela solução [`coding-practice.sln`](./coding-practice.sln). Os testes ficam centralizados em [`tests/CodingPractice.Tests`](./tests/CodingPractice.Tests).
+The projects are grouped in [`coding-practice.sln`](./coding-practice.sln), with tests centralized in [`tests/CodingPractice.Tests`](./tests/CodingPractice.Tests).
 
-## Requisitos
+## Requirements
 
 - .NET 10 SDK
 
-## Comandos úteis
+## Useful commands
 
 ```bash
 dotnet restore coding-practice.sln
@@ -28,22 +28,22 @@ dotnet build coding-practice.sln --configuration Release --no-restore
 dotnet test coding-practice.sln --configuration Release --no-build --no-restore
 ```
 
-Para criar um benchmark durante o estudo de um tópico:
+To create a benchmark while studying a topic:
 
 ```bash
 dotnet run --project benchmarks/CodingPractice.Benchmarks -c Release
 ```
 
-## Método de estudo
+## Study workflow
 
-- Use o [`guia de estudo`](./docs/STUDY_GUIDE.md) como fluxo de revisão.
-- Copie o [`template de estudo`](./docs/STUDY_TEMPLATE.md) para documentar cada tópico.
-- Atualize o [`roadmap`](./ROADMAP.md) somente quando a definição de pronto for atendida.
+- Follow the [`study guide`](./docs/STUDY_GUIDE.md) during each review.
+- Copy the [`study template`](./docs/STUDY_TEMPLATE.md) to document each topic.
+- Update the [`roadmap`](./ROADMAP.md) only after meeting the definition of done.
 
-## Qualidade automatizada
+## Automated quality checks
 
-O CI verifica formatação, padrões comuns de segredos, build sem warnings, 23 testes automatizados e cobertura mínima inicial de 40%. O Dependabot acompanha atualizações de pacotes NuGet e das GitHub Actions.
+CI checks formatting, common secret patterns, warning-free builds, 23 automated tests, and an initial minimum line coverage of 40%. Dependabot monitors NuGet packages and GitHub Actions for updates.
 
-## Licença
+## License
 
-Distribuído sob a licença MIT. Consulte [`LICENSE`](./LICENSE).
+Distributed under the MIT License. See [`LICENSE`](./LICENSE).

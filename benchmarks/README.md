@@ -1,17 +1,17 @@
 # Benchmarks
 
-Este projeto está preparado para benchmarks com BenchmarkDotNet, mas não contém cenários prontos. Cada benchmark deve ser escrito durante a revisão do tópico correspondente, quando houver uma pergunta concreta de desempenho.
+This project is configured for BenchmarkDotNet but intentionally contains no ready-made scenarios. Each benchmark should be written while reviewing its corresponding topic and should answer a concrete performance question.
 
-Execute em modo Release:
+Run it in Release mode:
 
 ```bash
 dotnet run --project benchmarks/CodingPractice.Benchmarks -c Release
 ```
 
-Um benchmark deve:
+A benchmark should:
 
-- comparar comportamentos equivalentes;
-- usar entradas representativas e parametrizadas;
-- evitar incluir a preparação dos dados na medição;
-- registrar a hipótese que está sendo verificada;
-- interpretar tempo e alocações, não apenas copiar números.
+- compare equivalent behavior;
+- use representative, parameterized inputs;
+- keep data preparation outside the measured operation;
+- state the hypothesis being tested;
+- interpret execution time and allocations instead of merely copying numbers.
