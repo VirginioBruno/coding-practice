@@ -6,8 +6,14 @@ $credentialPatterns = @(
 
 $findings = [System.Collections.Generic.List[string]]::new()
 $excludedExtensions = @('.dll', '.exe', '.pdb', '.png', '.jpg', '.jpeg', '.gif', '.ico', '.zip', '.pdf')
+$repositoryPath = (Get-Location).Path.Replace('\', '/')
+$trackedFiles = @(git -c "safe.directory=$repositoryPath" ls-files)
 
-foreach ($file in (git ls-files)) {
+if ($LASTEXITCODE -ne 0) {
+    throw 'Git could not list the tracked files.'
+}
+
+foreach ($file in $trackedFiles) {
     if ($file -eq 'scripts/verify-secrets.ps1') {
         continue
     }

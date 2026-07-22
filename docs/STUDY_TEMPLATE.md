@@ -1,56 +1,56 @@
-# Nome do tópico
+# Topic name
 
-## Objetivo
+## Goal
 
-Descreva o problema resolvido e quando essa técnica é útil.
+Describe the problem being solved and when this technique is useful.
 
-## Contrato
+## Contract
 
-- Entrada:
-- Saída:
-- Erros esperados:
-- Invariantes:
+- Input:
+- Output:
+- Expected errors:
+- Invariants:
 
-## Funcionamento
+## How it works
 
-Explique a solução com suas próprias palavras e inclua um exemplo pequeno executado passo a passo.
+Explain the solution in your own words and include a small step-by-step example.
 
-## Complexidade
+## Complexity
 
-| Operação ou cenário | Tempo | Espaço |
+| Operation or scenario | Time | Space |
 | --- | --- | --- |
-| Melhor caso |  |  |
-| Caso médio |  |  |
-| Pior caso |  |  |
+| Best case |  |  |
+| Average case |  |  |
+| Worst case |  |  |
 
-## Casos-limite
+## Edge cases
 
-- [ ] entrada vazia;
-- [ ] um único elemento;
-- [ ] valores duplicados;
-- [ ] valor ausente;
-- [ ] limites mínimo e máximo;
-- [ ] entrada inválida.
+- [ ] empty input;
+- [ ] a single element;
+- [ ] duplicate values;
+- [ ] a missing value;
+- [ ] minimum and maximum boundaries;
+- [ ] invalid input.
 
-## Decisões e trade-offs
+## Decisions and trade-offs
 
-Registre alternativas consideradas, simplificações e limitações conhecidas.
+Record the alternatives considered, simplifications, and known limitations.
 
-## Comparação com o .NET
+## Comparison with .NET
 
-Indique a API equivalente da biblioteca padrão e quando ela deve ser preferida.
+Identify the equivalent standard library API and explain when it should be preferred.
 
-## Evidências
+## Evidence
 
-- Caminho da implementação:
-- Caminho dos testes:
-- Benchmark, se aplicável:
+- Implementation path:
+- Test path:
+- Benchmark, when applicable:
 
-## Checklist para portfólio
+## Portfolio checklist
 
-- [ ] consigo explicar sem consultar a implementação;
-- [ ] os nomes comunicam a intenção;
-- [ ] os testes cobrem casos-limite;
-- [ ] a complexidade está documentada;
-- [ ] não existem placeholders ou código morto;
-- [ ] o CI está aprovado.
+- [ ] I can explain it without consulting the implementation;
+- [ ] names communicate intent;
+- [ ] tests cover edge cases;
+- [ ] complexity is documented;
+- [ ] there are no placeholders or dead code;
+- [ ] CI passes.

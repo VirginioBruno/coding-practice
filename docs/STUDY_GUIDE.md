@@ -1,22 +1,22 @@
-# Guia de estudo
+# Study guide
 
-Use este fluxo para revisar ou implementar cada tópico sem transformar o repositório em uma coleção de soluções copiadas.
+Use this workflow to review or implement each topic without turning the repository into a collection of copied solutions.
 
-1. Escreva o contrato: entradas, saídas, erros e invariantes.
-2. Resolva um exemplo pequeno manualmente.
-3. Implemente a primeira versão sem otimização prematura.
-4. Escreva testes para limites, entradas vazias, duplicados e valores ausentes.
-5. Calcule as complexidades de tempo e espaço.
-6. Compare com a implementação disponível no .NET, quando existir.
-7. Refatore nomes e responsabilidades sem mudar o comportamento.
-8. Execute build, testes, cobertura e benchmarks relevantes.
-9. Preencha o template de estudo e atualize o roadmap.
+1. Write the contract: inputs, outputs, errors, and invariants.
+2. Work through a small example by hand.
+3. Implement the first version without premature optimization.
+4. Write tests for boundaries, empty inputs, duplicates, and missing values.
+5. Calculate time and space complexity.
+6. Compare the implementation with the equivalent .NET API, when available.
+7. Refactor names and responsibilities without changing behavior.
+8. Run the build, tests, coverage checks, and relevant benchmarks.
+9. Complete the study template and update the roadmap.
 
-## Perguntas para revisão
+## Review questions
 
-- Qual invariante precisa permanecer verdadeira durante a execução?
-- Qual é o pior caso e o que o provoca?
-- A implementação aceita coleção vazia, valores duplicados e `null`?
-- Existe diferença entre complexidade amortizada e complexidade por operação?
-- Qual alternativa seria preferível em código de produção?
-- Como eu explicaria a solução em cinco minutos durante uma entrevista?
+- Which invariant must remain true throughout execution?
+- What is the worst case, and what causes it?
+- Does the implementation support empty collections, duplicate values, and `null`?
+- Is there a difference between amortized complexity and per-operation complexity?
+- Which alternative would be preferable in production code?
+- How would I explain the solution in five minutes during an interview?

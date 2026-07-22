@@ -32,8 +32,8 @@ namespace Challenges
                 if (reachedCoordinates)
                     return true;
 
-                var needMoviment = x < x2 || y < y2;
-                movement = needMoviment;
+                var needsMovement = x < x2 || y < y2;
+                movement = needsMovement;
             }
 
             return false;
@@ -41,15 +41,14 @@ namespace Challenges
 
         public static bool Palindrome(string text)
         {
-            // Implementar uma classe para fazer todos os tratamentos necessários
-            var formatedText = text
+            var formattedText = text
                 .Replace(" ", "", StringComparison.Ordinal)
                 .ToLowerInvariant();
 
-            var characters = formatedText.ToCharArray();
-            var textSize = formatedText.Length - 1;
+            var characters = formattedText.ToCharArray();
+            var textSize = formattedText.Length - 1;
 
-            for (int i = 0; i < formatedText.Length; i++)
+            for (int i = 0; i < formattedText.Length; i++)
             {
                 if (characters[i] != characters[textSize])
                     return false;
@@ -63,20 +62,20 @@ namespace Challenges
         public static bool PrimeNumber(int n)
         {
             int i;
-            int dividersCount = 0;
+            int divisorCount = 0;
             string message;
 
             for (i = 0; i < n - 1; i++)
             {
                 if (n % (i + 1) == 0)
-                    dividersCount++;
+                    divisorCount++;
             }
 
-            var isPrime = dividersCount == 1;
+            var isPrime = divisorCount == 1;
             if (isPrime)
-                message = $"O número {n} é primo. Número de iterações necessárias: {i}";
+                message = $"{n} is prime. Iterations required: {i}";
             else
-                message = $"O número {n} não é primo. Número de iterações necessárias: {i}";
+                message = $"{n} is not prime. Iterations required: {i}";
 
             Console.WriteLine(message);
             return isPrime;
@@ -119,7 +118,7 @@ namespace Challenges
             }
         }
 
-        public static List<string> getRelevantFoodOutlets(string city, int maxCost)
+        public static List<string> GetRelevantFoodOutlets(string city, int maxCost)
         {
             using var httpClient = new HttpClient();
             var baseUrl = $"https://jsonmock.hackerrank.com/api/food_outlets?city={city}";
